@@ -1,0 +1,1 @@
+`org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean`这个类，在`spring-hibernatexxx.jar`中有这个类但是没有`setPackagesToScan`这个方法，在`spring-ormxxx.jar`中也有这个类，而且有`setPackagesToScan`这个方法，如果同时包含这两个jar包，在eclipse IDE中运行单元测试不会报错，但是发布在tomcat中运行时就会报各种bean无法被装配的错误。
